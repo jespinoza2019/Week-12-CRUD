@@ -1,0 +1,40 @@
+#content {
+    width: 95%;
+    margin: auto;
+    
+}
+
+.info-box {
+    background-color:rgb(253, 251, 251);
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: 600;
+    box-shadow: .5in;
+}
+
+.picture {
+    height: 10em;
+    padding: 1em;
+    background-image: url("R.jpg");
+}
+
+
+.container{
+    background-color: #b5e0d9;
+    border: #000 2em;
+    height: fit-content;
+	width: 85%;
+	overflow: hidden;
+	margin: 20px auto 0 aut;
+
+}
+.container btn1{
+    align-items: center;
+    background-color: #0e5878;
+    border: #000 5em;
+    height: fit-content;
+	width: 100%;
+	overflow: hidden;
+    padding-bottom: 1em;
+}

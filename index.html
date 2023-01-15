@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Head-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD App</title>
+</head>
+ <!--Header-->
+<header class="picture">
+</header>
+ <!--Body-->
+<body>
+   <!--Main-->
+    <main class="container">
+      <!--Forms-->
+      <div class="forms">
+        <!--First Form for Recipes to be added with two rows and two columns-->
+        <form id="myForm">
+            <h1>Add Recipe</h1>
+             <div class="mb-3">
+              <div class="row">
+                <div class="col">
+                  <label class="form-label">Name of Recipe</label>
+                  <input type="text" class="form-control" placeholder="Name of Recipe" aria-label="First name" id="name">
+                </div>
+                <div class="col">
+                  <label class="form-label">Submitter/Author</label>
+                  <input type="text" class="form-control" placeholder="Owner" aria-label="Last name" id="owner">
+                </div>
+              </div>
+
+            </div>
+            <div class="mb-3">
+              <div class="row">
+                <div class="col">
+                  <label class="form-label">Ingredients</label>
+                  <input type="text" class="form-control" placeholder="List of Ingredients" aria-label="List of Ingredients" id="ingredients">
+                </div>
+                <div class="col">
+                  <label class="form-label">Instructions</label>
+                  <input type="text" class="form-control" placeholder="Instructions" aria-label="Simple Instructions" id="instructions">
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <!--Second Form for Recipes to be Udated with two rows and two columns-->
+        <form id="myUpdateForm" class="mt-4">
+            <h1>Update Recipe</h1>
+
+            <div class="mb-3">
+              <div class="row">
+                <div class="col">
+                  <label class="form-label">ID</label>
+                  <input type="text" class="form-control" placeholder="ID" aria-label=Name of Recipe" id="updateId">
+                </div>
+                <div class="col">
+                  <label class="form-label">Name of Recipe</label>
+                  <input type="text" class="form-control" placeholder="Name of Recipe" aria-label=Name of Recipe" id="updateName">
+                </div>
+                <div class="col">
+                  <label class="form-label">Submitter/Author</label>
+                  <input type="text" class="form-control" placeholder="Owner" aria-label="Owner" id="updateOwner">
+                </div>
+              </div>
+
+            </div>
+            <div class="mb-3">
+              <div class="row">
+                <div class="col">
+                  <label class="form-label">Ingredients</label>
+                  <input type="text" class="form-control" placeholder="List of Ingredients" aria-label="List of Ingredients" id="updateIngredients">
+                </div>
+                <div class="col">
+                  <label class="form-label">Instructions</label>
+                  <input type="text" class="form-control" placeholder="Simple Instructions" aria-label="Instructions" id="updateInstructions">
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+        <!--This will be my info box for recipes-->
+        <div id="content"></div>
+    </main>
+    <!--Necessary scripts for bootstrap jquery and my js file-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!--This script should go last -->
+    <script src="script.js"></script>
+</body>
+</html>
